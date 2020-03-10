@@ -29,3 +29,13 @@ To set up the appropriate tables, connect to the datatbase in `psql` and run the
 
 ### To run tests ###
 `rspec` from the parent directory
+
+### User Stories ###
+
+1.  As a User
+    So I can save time
+    I want to see a list of websites I regularly visit
+
+2.  As a User
+    So I can save a website
+    I'd like to add the title and url to Bookmark Manager
