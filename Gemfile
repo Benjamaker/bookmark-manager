@@ -2,9 +2,11 @@
 
 source "https://rubygems.org"
 
-gem 'rspec'
+gem 'pg'
 gem 'sinatra'
-gem 'capybara'
+
+gem 'rspec', group: :test
+gem 'capybara', group: :test
 
 
 # gem "rails"

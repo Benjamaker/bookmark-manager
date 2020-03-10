@@ -7,12 +7,22 @@ A web app to store bookmarks for popular websites
 
 Then run `bundle`
 
-### To set up the database ###
+### To set up the databases ###
 
+#### database ####
 Connect to `psql` and create the `bookmark_manager` database:
 
 ```
 CREATE DATABASE bookmark_manager;
+```
+
+To set up the appropriate tables, connect to the datatbase in `psql` and run the SQL scripts in the `db/migrations` directory in the given folder.
+
+#### Test database ####
+Connect to `psql` and create the `bookmark_manager_test` database:
+
+```
+CREATE DATABASE bookmark_manager_test;
 ```
 
 To set up the appropriate tables, connect to the datatbase in `psql` and run the SQL scripts in the `db/migrations` directory in the given folder.
