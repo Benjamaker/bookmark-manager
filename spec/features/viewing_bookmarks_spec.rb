@@ -7,10 +7,10 @@ end
 
 feature 'Viewing bookmarks' do
   scenario 'A user can see bookmarks' do
-    Bookmark.add(url: 'https://github.com/Benjamaker')
-    Bookmark.add(url: 'https://www.google.com')
+    Bookmark.add(title: 'github', url: 'https://github.com/Benjamaker')
+    Bookmark.add(title: 'google', url: 'https://www.google.com')
     visit('/bookmarks')
-    expect(page).to have_content "https://github.com/Benjamaker"
-    expect(page).to have_content "https://www.google.com"
+    expect(page).to have_link('github', href:"https://github.com/Benjamaker")
+    expect(page).to have_link('google', href:"https://www.google.com")
   end
 end
