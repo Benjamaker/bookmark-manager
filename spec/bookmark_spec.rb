@@ -23,4 +23,12 @@ describe Bookmark do
       expect(bookmark.title).to eq('codewars')
     end
   end
+
+  context '.delete' do
+    it 'deletes Bookmarks' do
+      bookmark = Bookmark.add(title: 'codewars', url: 'https://www.codewars.com/dashboard')
+      Bookmark.delete(id: bookmark.id)
+      expect(Bookmark.all.length).to eq 0
+    end
+  end
 end
